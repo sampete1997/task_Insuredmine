@@ -7,7 +7,7 @@ const User = require("../models/User");
 const PolicyInfo = require("../models/PolicyInfo");
 const ScheduledMessage = require("../models/ScheduledMessage");
 const { uploadFile } = require("../middleware/fileUpload");
-const CronJobs = require("../models/cronJobs");
+const CronJobs = require("../models/CronJobs");
 
 const uploadFileToDb = async (req, res) => {
     try {

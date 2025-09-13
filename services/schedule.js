@@ -1,4 +1,4 @@
-const cronJobs = require("../models/cronJobs");
+const cronJobs = require("../models/CronJobs");
 const ScheduledMessage = require("../models/ScheduledMessage");
 
 
