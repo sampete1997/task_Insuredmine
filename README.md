@@ -9,17 +9,19 @@ https://www.postman.com/red-satellite-980549/insuredmind/collection/irhy96v/task
 
 1. Install dependencies:
 
+```
 npm install
-    
+```
 
 2. Start the server:
-    
-    - Using PM2 (recommended for production):
+Using PM2 (recommended for production):
 ```
 pm2 start server.js
 
-OR directly with Node:
-
+```
+OR 
+directly with Node:
+```
 node server.js
 ```
 
