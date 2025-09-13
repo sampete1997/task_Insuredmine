@@ -14,7 +14,7 @@ npm install
 ```
 
 2. Start the server:
-Using PM2 (recommended for production):
+Using PM2 (Not for dev)
 ```
 pm2 start server.js
 
@@ -36,7 +36,7 @@ node server.js
 Example cURL:
 ```
 curl --location 'http://localhost:3000/api/upload' \
---form 'file=@"/C:/Users/aarta/Downloads/data_sheet_policy.csv"'
+--form 'file=@"/C:/Users/sohel/Downloads/data_sheet_policy.csv"'
 ```
 
 
@@ -62,7 +62,7 @@ Payload (optional):
 
 ```json
 {
-    "user_id": "68c3b72cd32a5c8ec6f34604"
+    "user_id": "68c3b72cd32a5c8ec6f34604" // OPTIONAL
 }
 ```
 
@@ -123,10 +123,6 @@ curl --location 'http://localhost:3000/api/schedule_message' \
 
 * MongoDB is used to store:
 
-  * Policy information
-  * Scheduled messages
-  * Metadata of uploaded files
-
 ### following tables
 
 ```
@@ -143,6 +139,7 @@ curl --location 'http://localhost:3000/api/schedule_message' \
 6) Policy Info -  policy number, policy start date, policy end date, policy category- collection id, company collection id, and user id.
 
 ```
+
 
 
 
